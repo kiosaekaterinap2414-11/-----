@@ -1,0 +1,36 @@
+@startuml
+left to right direction
+
+actor Administrator
+actor Worker
+
+rectangle "Construction Site Management System" {
+
+  (Login) as UC1
+  (View works) as UC2
+  (Search works) as UC3
+  (Filter works) as UC4
+  (Add work) as UC5
+  (Edit work) as UC6
+  (Delete work) as UC7
+  (View statistics) as UC8
+  (Logout) as UC9
+}
+
+Administrator --> UC1
+Administrator --> UC2
+Administrator --> UC3
+Administrator --> UC4
+Administrator --> UC5
+Administrator --> UC6
+Administrator --> UC7
+Administrator --> UC8
+Administrator --> UC9
+
+Worker --> UC1
+Worker --> UC2
+Worker --> UC3
+Worker --> UC4
+Worker --> UC8
+Worker --> UC9
+@enduml
