@@ -1,0 +1,20 @@
+@startuml
+start
+:Enter username and password;
+:Validate user data;
+
+if (User is administrator?) then (Yes)
+:Open admin dashboard;
+else (No)
+:Open worker dashboard;
+endif
+
+:View list of works;
+:Search or filter works;
+if (Manage works?) then (Yes)
+:Add / Edit / Delete work;
+endif
+:View statistics;
+:Logout;
+stop
+@enduml
